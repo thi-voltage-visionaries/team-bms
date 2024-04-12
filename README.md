@@ -11,13 +11,13 @@
 
 - Setup 2-CH CAN FD HAT mit Raspberry Pi:
 
-• Spannungspins des 2-CH CAN FD HAT auf 3.3 V einstellen
+1. Step: Spannungspins des 2-CH CAN FD HAT auf 3.3 V einstellen
 
-• SPI interface aktivieren: sudo raspi-config -> SPI -> Yes
+2. Step: SPI interface aktivieren: sudo raspi-config -> SPI -> Yes
 
-• Neustarten: sudo reboot
+3. Step: Neustart: sudo reboot
 
-• Python 3 installieren: 
+4. Step: python3 installieren
 
 sudo apt-get update
 
@@ -33,11 +33,11 @@ sudo pip3 install spidev
 
 sudo pip3 install python-can
 
-• Dual SPI Mode aktivieren: 
+5. Step: Dual SPI Mode aktivieren: 
 
 sudo nano /boot/firmware/config.txt
 
-Hinzufügen dieser Commands am Ende der Datei: 
+6. Step: Hinzufügen folgender Commands am Ende der Datei: 
 
 dtparam=spi=on
 
@@ -47,27 +47,25 @@ dtoverlay=mcp251xfd,spi0-0,interrupt=25
 
 dtoverlay=mcp251xfd,spi1-0,interrupt=24
 
-• Konfiguration CAN:
-
-Baud rate einstellen:
+7. Step: Baud rate einstellen:
 
 sudo ip link set can0 up type can bitrate 1000000 dbitrate 8000000 restart-ms 1000 berr-reporting on fd on
 
 sudo ip link set can1 up type can bitrate 1000000 dbitrate 8000000 restart-ms 1000 berr-reporting on fd on
 
-Buffer konfigurieren:
+8. Step: Buffer konfigurieren:
 
 sudo ifconfig can0 txqueuelen 65536
 
 sudo ifconfig can1 txqueuelen 65536
 
-• CAN0 High mit CAN1 High und CAN0 Low mit CAN1 Low über Drahtbrücken verbinden
+9. Step: CAN0 High mit CAN1 High und CAN0 Low mit CAN1 Low über Drahtbrücken verbinden
 
-• Installation von can-utils:
+10. Step: Installation von can-utils:
 
 sudo apt-get install can-utils
 
-• Zwei Terminal Fenster öffnen
+11. Step: Zwei Terminal Fenster öffnen
 
 Fenster 1 "CAN-receiver": candump can0
 

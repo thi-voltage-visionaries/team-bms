@@ -1,5 +1,5 @@
 # Team: BMS
-Wie funktioniert das Python-Skript "battery_data.py"?
+- Wie funktioniert das Python-Skript "battery_data.py"?
 
 • Wenn das Programm ausgeführt wird, wird eine JSON-Datei erzeugt mit dem Titel "battery_data_{Unix-Zeitstempel}.json.
 
@@ -9,7 +9,7 @@ Wie funktioniert das Python-Skript "battery_data.py"?
 
 • Die erzeugten JSON-Dateien werden in einem seperaten Ordner mit dem Namen "battery_data" abgelegt.
 
-Setup 2-CH CAN FD HAT mit Raspberry Pi:
+- Setup 2-CH CAN FD HAT mit Raspberry Pi:
 
 • Spannungspins des 2-CH CAN FD HAT auf 3.3 V einstellen
 

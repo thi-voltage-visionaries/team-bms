@@ -24,7 +24,7 @@ def write_to_json(data, folder, filename): #Batteriedaten in JSON-Datei schreibe
         os.makedirs(folder)
     
     filepath = os.path.join(folder, filename)
-    with open(filename, "w") as json_file: #w: write
+    with open(filepath, "w") as json_file: #w: write
         json.dump(data, json_file)
 
 __name__ == "__main__"

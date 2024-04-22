@@ -1,0 +1,362 @@
+VERSION "DALY_BMS"
+
+NS_ :
+	NS_DESC_
+
+BS_ :
+
+BU_ :
+
+BO_ 144 SOC_of_Total Voltage: 8 0x90
+	SG_ Accumulated_Total_Voltage : 0|16@0.1+0 [0|6553.5] "V" Vector__XXX
+	SG_ Acquired_Total_Voltage : 16|16@0.1+0 [0|6553.5] "V" Vector__XXX
+	SG_ Current : 32|16@0.1-30000 [0|6553.5] "A" Vector__XXX
+	SG_ State_of_Charge : 48|16@0.1+0 [0|100] "%" Vector__XXX
+
+CM_ SG_ "Accumulated Total Voltage" 144 Accumulated_Total_Voltage
+CM_ SG_ "Acquired Total Voltage" 144 Acquired_Total_Voltage
+CM_ SG_ "Current" 144 Current
+CM_ SG_ "State of Charge" 144 SOC
+
+BO_ 145 Maximum_Minimum_Voltage_of_Monomer: 8 0x91
+	SG_ Maximum_Monomer_Voltage : 0|16@1+0 [0|6553.5] "mV" Vector__XXX
+	SG_ Maximum_Unit_Voltage_Cell_No : 16|8@1+0 [0|255] "" Vector__XXX
+	SG_ Minimum_Monomer_Voltage : 24|16@1+0 [0|6553.5] "mV" Vector__XXX
+	SG_ Minium_Unit_Voltage_Cell_No :40|8@1+0 [0|255] "" Vector__XXX
+
+CM_ SG_ "Maximum Monomer Voltage Value" 145 Maximum_Monomer_Voltage_Value
+CM_ SG_ "Maximum Unit Voltage Cell No" 145 Maximum_Unit_Voltage_Cell_No
+CM_ SG_ "Minimum Monomer Voltage Value" 145 Minimum_Monomer_Voltage_Value
+CM_ SG_ "Minimum Unit Voltage Cell No" 145 Minimum_Unit_Voltage_Cell_No
+
+BO_ 146 Maximum_Minimum_Temperature_of_Monomer: 8 0x92
+	SG_ Maximum_Monomer_Temperature : 0|8@1+40 [0|6553.5] "ø C" Vector__XXX
+	SG_ Maximum_Monomer_Temperature_Cell_No : 8|8@1+0 [0|255] "" Vector__XXX
+	SG_ Minimum_Monomer_Temperature : 16|8@1+40 [0|6553.5] "ø C" Vector__XXX
+	SG_ Minimum_Monomer_Temperature_Cell_No : 24|8@1+0 [0|255] "" Vector__XXX
+
+CM_ SG_ "Maximum Monomer Temperature" 146 Maximum_Monomer_Temperature
+CM_ SG_ "Maximum Monomer Temperature Cell No" 146 Maximum_Monomer_Temperature_Cell_No
+CM_ SG_ "Minimum Monomer Temperature" 146 Minimum_Monomer_Temperature
+CM_ SG_ "Minimum Monomer Temperature Cell No" 146 Minimum_Monomer_Temperature_Cell_No
+
+BO_ 147 Charge_Discharge_MOS_Status: 8 0x93
+	SG_ Charge_Discharge_Status : 0|8@1+0 [0|2] "" Vector__XXX
+	SG_ Charging_MOS_Tube_Status : 8|8@1+0 [0|255] "" Vector__XXX
+	SG_ Discharge_MOS_TUBE_STATE : 16|8@1+0 [0|255] "" Vector__XXX
+	SG_ BMS_Life : 24|8@1+0 [0|255] "" Vector__XXX
+	SG_ Residual_Capacity : 32|32@1+0 [0|2600] "mAh" Vector__XXX
+
+CM_ SG_ "Charge/Discharge Status" 147 Charge_Discharge_Status
+CM_ SG_ "Charging MOS Status" 147 Charging_MOS_Status
+CM_ SG_ "Discharging MOS Status" 147 Discharging_MOS_Status
+CM_ SG_ "BMS Life" 147 BMS_Life
+CM_ SG_ "Residual Capacity" 147 Residual_Capacity
+
+BO_ 148 Status_Information_1: 8 0x94
+	SG_ Battery_String : 0|8@1+0 [0|255] "" Vector__XXX
+	SG_ Temperature : 8|8@1+0 [0|255] "" Vector__XXX
+	SG_ Charger_Status : 16|1@1+0 [0|1] "" Vector__XXX
+	SG_ Load_Status : 17|1@1+0 [0|1] "" Vector__XXX
+	SG_DI1_State : 24|1@1+0 [0|1] "" Vector__XXX
+	SG_DI2_State : 25|1@1+0 [0|1] "" Vector__XXX
+	SG_DI3_State : 26|1@1+0 [0|1] "" Vector__XXX
+	SG_DI4_State : 27|1@1+0 [0|1] "" Vector__XXX
+	SG_DO1_State : 28|1@1+0 [0|1] "" Vector__XXX
+	SG_DO2_State : 29|1@1+0 [0|1] "" Vector__XXX
+	SG_DO3_State : 30|1@1+0 [0|1] "" Vector__XXX
+	SG_DO4_State : 31|1@1+0 [0|1] "" Vector__XXX
+	SG_ Charge_Discharge_Cycles : 32|16@1+0 [0|65535] "" Vector__XXX
+
+CM_ SG_ "Battery String" 148 Battery_String
+CM_ SG_ "Temperature Count" 148 Temperature_Count
+CM_ SG_ "Charger Status" 148 Charger_Status
+CM_ SG_ "Load Status" 148 Load_Status
+CM_ SG_ "DI1 State" 148 DI1_State
+CM_ SG_ "DI2 State" 148 DI2_State
+CM_ SG_ "DI3 State" 148 DI3_State
+CM_ SG_ "DI4 State" 148 DI4_State
+CM_ SG_ "DO1 State" 148 DO1_State
+CM_ SG_ "DO2 State" 148 DO2_State
+CM_ SG_ "DO3 State" 148 DO3_State
+CM_ SG_ "DO4 State" 148 DO4_State
+CM_ SG_ "Charge/Discharge Cycles" 148 Charge_Discharge_Cycles
+
+BO_ 149 Cell_Voltage_1_to_48: 8 0x95
+ 	SG_ Frame_Number : 0|8@1+0 [0|255] "" Vector__XXX
+ 	SG_ Cell_Voltage_1 : 8|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_2 : 24|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_3 : 40|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_4 : 56|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_5 : 72|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_6 : 88|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_7 : 104|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_8 : 120|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_9 : 136|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_10 : 152|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_11 : 168|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_12 : 184|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_13 : 200|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_14 : 216|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_15 : 232|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+ 	SG_ Cell_Voltage_16 : 248|16@0.1+0 [0|6553.5] "mV" Vector__XXX
+
+CM_ SG_ "Frame Number" 149 Frame_Number
+CM_ SG_ "Cell Voltage 1" 149 Cell_Voltage_1
+CM_ SG_ "Cell Voltage 2" 149 Cell_Voltage_2
+CM_ SG_ "Cell Voltage 3" 149 Cell_Voltage_3
+CM_ SG_ "Cell Voltage 4" 149 Cell_Voltage_4
+CM_ SG_ "Cell Voltage 5" 149 Cell_Voltage_5
+CM_ SG_ "Cell Voltage 6" 149 Cell_Voltage_6
+CM_ SG_ "Cell Voltage 7" 149 Cell_Voltage_7
+CM_ SG_ "Cell Voltage 8" 149 Cell_Voltage_8
+CM_ SG_ "Cell Voltage 9" 149 Cell_Voltage_9
+CM_ SG_ "Cell Voltage 10" 149 Cell_Voltage_10
+CM_ SG_ "Cell Voltage 11" 149 Cell_Voltage_11
+CM_ SG_ "Cell Voltage 12" 149 Cell_Voltage_12
+CM_ SG_ "Cell Voltage 13" 149 Cell_Voltage_13
+CM_ SG_ "Cell Voltage 14" 149 Cell_Voltage_14
+CM_ SG_ "Cell Voltage 15" 149 Cell_Voltage_15
+CM_ SG_ "Cell Voltage 16" 149 Cell_Voltage_16
+
+BO_ 150 Monomer_Temperature_1_to_16: 8 0x96
+ 	SG_ Frame_Number : 0|8@1+0 [0|255] "" Vector__XXX
+ 	SG_ Monomer_Temperature_1 : 8|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_2 : 16|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_3 : 24|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_4 : 32|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_5 : 40|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_6 : 48|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_7 : 56|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_8 : 64|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_9 : 72|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_10 : 80|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_11 : 88|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_12 : 96|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_13 : 104|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_14 : 112|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_15 : 120|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_16 : 128|8@1+40 [40|95] "øC" Vector__XXX
+
+CM_ SG_ "Frame Number" 150 Frame_Number
+CM_ SG_ "Monomer Temperature 1" 150 Monomer_Temperature_1
+CM_ SG_ "Monomer Temperature 2" 150 Monomer_Temperature_2
+CM_ SG_ "Monomer Temperature 3" 150 Monomer_Temperature_3
+CM_ SG_ "Monomer Temperature 4" 150 Monomer_Temperature_4
+CM_ SG_ "Monomer Temperature 5" 150 Monomer_Temperature_5
+CM_ SG_ "Monomer Temperature 6" 150 Monomer_Temperature_6
+CM_ SG_ "Monomer Temperature 7" 150 Monomer_Temperature_7
+CM_ SG_ "Monomer Temperature 8" 150 Monomer_Temperature_8
+CM_ SG_ "Monomer Temperature 9" 150 Monomer_Temperature_9
+CM_ SG_ "Monomer Temperature 10" 150 Monomer_Temperature_10
+CM_ SG_ "Monomer Temperature 11" 150 Monomer_Temperature_11
+CM_ SG_ "Monomer Temperature 12" 150 Monomer_Temperature_12
+CM_ SG_ "Monomer Temperature 13" 150 Monomer_Temperature_13
+CM_ SG_ "Monomer Temperature 14" 150 Monomer_Temperature_14
+CM_ SG_ "Monomer Temperature 15" 150 Monomer_Temperature_15
+CM_ SG_ "Monomer Temperature 16" 150 Monomer_Temperature_16
+
+BO_ 151 Monomer_Equilibrium_State: 8 0x97
+	SG_ Reserved_0 : 0|8@1+0 [0|255] "" Vector__XXX
+	SG_ Monomer_1_Equilibrium_State : 8|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_2_Equilibrium_State : 9|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_3_Equilibrium_State : 10|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_4_Equilibrium_State : 11|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_5_Equilibrium_State : 12|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_6_Equilibrium_State : 13|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_7_Equilibrium_State : 14|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_8_Equilibrium_State : 15|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_9_Equilibrium_State : 16|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_10_Equilibrium_State : 17|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_11_Equilibrium_State : 18|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_12_Equilibrium_State : 19|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_13_Equilibrium_State : 20|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_14_Equilibrium_State : 21|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_15_Equilibrium_State : 22|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_16_Equilibrium_State : 23|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_17_Equilibrium_State : 24|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_18_Equilibrium_State : 25|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_19_Equilibrium_State : 26|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_20_Equilibrium_State : 27|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_21_Equilibrium_State : 28|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_22_Equilibrium_State : 29|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_23_Equilibrium_State : 30|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_24_Equilibrium_State : 31|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_25_Equilibrium_State : 32|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_26_Equilibrium_State : 33|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_27_Equilibrium_State : 34|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_28_Equilibrium_State : 35|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_29_Equilibrium_State : 36|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_30_Equilibrium_State : 37|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_31_Equilibrium_State : 38|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_32_Equilibrium_State : 39|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_33_Equilibrium_State : 40|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_34_Equilibrium_State : 41|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_35_Equilibrium_State : 42|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_36_Equilibrium_State : 43|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_37_Equilibrium_State : 44|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_38_Equilibrium_State : 45|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_39_Equilibrium_State : 46|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_40_Equilibrium_State : 47|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_41_Equilibrium_State : 48|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_42_Equilibrium_State : 49|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_43_Equilibrium_State : 50|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_44_Equilibrium_State : 51|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_45_Equilibrium_State : 52|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_46_Equilibrium_State : 53|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_47_Equilibrium_State : 54|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_48_Equilibrium_State : 55|1@1+0 [0|1] "" Vector__XXX
+
+CM_ SG_ "Monomer 1 equilibrium state" 149 MONOMER_EQ_STATE_01
+CM_ SG_ "Monomer 2 equilibrium state" 149 MONOMER_EQ_STATE_02
+CM_ SG_ "Monomer 3 equilibrium state" 149 MONOMER_EQ_STATE_03
+CM_ SG_ "Monomer 4 equilibrium state" 149 MONOMER_EQ_STATE_04
+CM_ SG_ "Monomer 5 equilibrium state" 149 MONOMER_EQ_STATE_05
+CM_ SG_ "Monomer 6 equilibrium state" 149 MONOMER_EQ_STATE_06
+CM_ SG_ "Monomer 7 equilibrium state" 149 MONOMER_EQ_STATE_07
+CM_ SG_ "Monomer 8 equilibrium state" 149 MONOMER_EQ_STATE_08
+CM_ SG_ "Monomer 9 equilibrium state" 149 MONOMER_EQ_STATE_09
+CM_ SG_ "Monomer 10 equilibrium state" 149 MONOMER_EQ_STATE_10
+CM_ SG_ "Monomer 11 equilibrium state" 149 MONOMER_EQ_STATE_11
+CM_ SG_ "Monomer 12 equilibrium state" 149 MONOMER_EQ_STATE_12
+CM_ SG_ "Monomer 13 equilibrium state" 149 MONOMER_EQ_STATE_13
+CM_ SG_ "Monomer 14 equilibrium state" 149 MONOMER_EQ_STATE_14
+CM_ SG_ "Monomer 15 equilibrium state" 149 MONOMER_EQ_STATE_15
+CM_ SG_ "Monomer 16 equilibrium state" 149 MONOMER_EQ_STATE_16
+CM_ SG_ "Monomer 17 equilibrium state" 149 MONOMER_EQ_STATE_17
+CM_ SG_ "Monomer 18 equilibrium state" 149 MONOMER_EQ_STATE_18
+CM_ SG_ "Monomer 19 equilibrium state" 149 MONOMER_EQ_STATE_19
+CM_ SG_ "Monomer 20 equilibrium state" 149 MONOMER_EQ_STATE_20
+CM_ SG_ "Monomer 21 equilibrium state" 149 MONOMER_EQ_STATE_21
+CM_ SG_ "Monomer 22 equilibrium state" 149 MONOMER_EQ_STATE_22
+CM_ SG_ "Monomer 23 equilibrium state" 149 MONOMER_EQ_STATE_23
+CM_ SG_ "Monomer 24 equilibrium state" 149 MONOMER_EQ_STATE_24
+CM_ SG_ "Monomer 25 equilibrium state" 149 MONOMER_EQ_STATE_25
+CM_ SG_ "Monomer 26 equilibrium state" 149 MONOMER_EQ_STATE_26
+CM_ SG_ "Monomer 27 equilibrium state" 149 MONOMER_EQ_STATE_27
+CM_ SG_ "Monomer 28 equilibrium state" 149 MONOMER_EQ_STATE_28
+CM_ SG_ "Monomer 29 equilibrium state" 149 MONOMER_EQ_STATE_29
+CM_ SG_ "Monomer 30 equilibrium state" 149 MONOMER_EQ_STATE_30
+CM_ SG_ "Monomer 31 equilibrium state" 149 MONOMER_EQ_STATE_31
+CM_ SG_ "Monomer 32 equilibrium state" 149 MONOMER_EQ_STATE_32
+CM_ SG_ "Monomer 33 equilibrium state" 149 MONOMER_EQ_STATE_33
+CM_ SG_ "Monomer 34 equilibrium state" 149 MONOMER_EQ_STATE_34
+CM_ SG_ "Monomer 35 equilibrium state" 149 MONOMER_EQ_STATE_35
+CM_ SG_ "Monomer 36 equilibrium state" 149 MONOMER_EQ_STATE_36
+CM_ SG_ "Monomer 37 equilibrium state" 149 MONOMER_EQ_STATE_37
+CM_ SG_ "Monomer 38 equilibrium state" 149 MONOMER_EQ_STATE_38
+CM_ SG_ "Monomer 39 equilibrium state" 149 MONOMER_EQ_STATE_39
+CM_ SG_ "Monomer 40 equilibrium state" 149 MONOMER_EQ_STATE_40
+CM_ SG_ "Monomer 41 equilibrium state" 149 MONOMER_EQ_STATE_41
+CM_ SG_ "Monomer 42 equilibrium state" 149 MONOMER_EQ_STATE_42
+CM_ SG_ "Monomer 43 equilibrium state" 149 MONOMER_EQ_STATE_43
+CM_ SG_ "Monomer 44 equilibrium state" 149 MONOMER_EQ_STATE_44
+CM_ SG_ "Monomer 45 equilibrium state" 149 MONOMER_EQ_STATE_45
+CM_ SG_ "Monomer 46 equilibrium state" 149 MONOMER_EQ_STATE_46
+CM_ SG_ "Monomer 47 equilibrium state" 149 MONOMER_EQ_STATE_47
+CM_ SG_ "Monomer 48 equilibrium state" 149 MONOMER_EQ_STATE_48
+
+BO_ 152 Battery_Failure_Status: 8 0x98
+	SG_ Reserved_0 : 0|8@1+0 [0|255] "" Vector__XXX
+	SG_ Unit_Over_Voltage_Warning_Stage_1 : 8|1@1+0 [0|1] "" Vector__XXX
+	SG_ Unit_Over_Voltage_Warning_Stage_2 : 9|1@1+0 [0|1] "" Vector__XXX
+	SG_ Unit_Under_Voltage_Warning_Stage_1 : 10|1@1+0 [0|1] "" Vector__XXX
+	SG_ Unit_Under_Voltage_Warning_Stage_2 : 11|1@1+0 [0|1] "" Vector__XXX
+	SG_ Total_Voltage_Too_High_Warning_Stage_1 : 12|1@1+0 [0|1] "" Vector__XXX
+	SG_ Total_Voltage_Too_High_Warning_Stage_2 : 13|1@1+0 [0|1] "" Vector__XXX
+	SG_ Total_Voltage_Too_Low_Warning_Stage_1 : 14|1@1+0 [0|1] "" Vector__XXX
+	SG_ Total_Voltage_Too_Low_Warning_Stage_2 : 15|1@1+0 [0|1] "" Vector__XXX
+	SG_ Charging_Temperature_Too_High_Warning_Stage_1 : 16|1@1+0 [0|1] "" Vector__XXX
+	SG_ Charging_Temperature_Too_High_Warning_Stage_2 : 17|1@1+0 [0|1] "" Vector__XXX
+	SG_ Charging_Temperature_Too_Low_Warning_Stage_1 : 18|1@1+0 [0|1] "" Vector__XXX
+	SG_ Charging_Temperature_Too_Low_Warning_Stage_2 : 19|1@1+0 [0|1] "" Vector__XXX
+	SG_ Discharge_Temperature_Too_High_Warning_Stage_1 : 20|1@1+0 [0|1] "" Vector__XXX
+	SG_ Discharge_Temperature_Too_High_Warning_Stage_2 : 21|1@1+0 [0|1] "" Vector__XXX
+	SG_ Discharge_Temperature_Too_Low_Warning_Stage_1 : 22|1@1+0 [0|1] "" Vector__XXX
+	SG_ Discharge_Temperature_Too_Low_Warning_Stage_2 : 23|1@1+0 [0|1] "" Vector__XXX
+	SG_ Charge_Over_Current_Warning_Stage_1 : 24|1@1+0 [0|1] "" Vector__XXX
+	SG_ Charge_Over_Current_Warning_Stage_2 : 25|1@1+0 [0|1] "" Vector__XXX
+	SG_ Discharge_Over_Current_Warning_Stage_1 : 26|1@1+0 [0|1] "" Vector__XXX
+	SG_ Discharge_Over_Current_Warning_Stage_2 : 27|1@1+0 [0|1] "" Vector__XXX
+	SG_ SOC_Too_High_Warning_Stage_1 : 28|1@1+0 [0|1] "" Vector__XXX
+	SG_ SOC_Too_High_Warning_Stage_2 : 29|1@1+0 [0|1] "" Vector__XXX
+	SG_ SOC_Too_Low_Warning_Stage_1 : 30|1@1+0 [0|1] "" Vector__XXX
+	SG_ SOC_Too_Low_Warning_Stage_2 : 31|1@1+0 [0|1] "" Vector__XXX
+	SG_ Excessive_Differential_Pressure_Warning_Stage_1 : 32|1@1+0 [0|1] "" Vector__XXX
+	SG_ Excessive_Differential_Pressure_Warning_Stage_2 : 33|1@1+0 [0|1] "" Vector__XXX
+	SG_ Excessive_Temperature_Difference_Warning_Stage_1 : 34|1@1+0 [0|1] "" Vector__XXX
+	SG_ Excessive_Temperature_Difference_Warning_Stage_2 : 35|1@1+0 [0|1] "" Vector__XXX
+	SG_ Charging_MOS_Overtemperature_Warning : 36|1@1+0 [0|1] "" Vector__XXX
+	SG_ Discharge_MOS_Overtemperature_Warning : 37|1@1+0 [0|1] "" Vector__XXX
+	SG_ Charging_MOS_Temperature_Sensor_Failure : 38|1@1+0 [0|1] "" Vector__XXX
+	SG_ Discharge_MOS_Temperature_Sensor_Failure : 39|1@1+0 [0|1] "" Vector__XXX
+	SG_ Charging_MOS_Adhesion_Failure : 40|1@1+0 [0|1] "" Vector__XXX
+	SG_ Discharge_MOS_Adhesion_Failure : 41|1@1+0 [0|1] "" Vector__XXX
+	SG_ Charging_MOS_Breaker_Failure : 42|1@1+0 [0|1] "" Vector__XXX
+	SG_ Discharge_MOS_Breaker_Failure : 43|1@1+0 [0|1] "" Vector__XXX
+	SG_ AFE_Acquisition_Chip_Malfunction : 44|1@1+0 [0|1] "" Vector__XXX
+	SG_ Monomer_Collect_Drop_Off : 45|1@1+0 [0|1] "" Vector__XXX
+	SG_ Single_Temperature_Sensor_Fault : 46|1@1+0 [0|1] "" Vector__XXX
+	SG_ EEPROM_Storage_Failures : 47|1@1+0 [0|1] "" Vector__XXX
+	SG_ RTC_Clock_Malfunction : 48|1@1+0 [0|1] "" Vector__XXX
+	SG_ Precharge_Failure : 49|1@1+0 [0|1] "" Vector__XXX
+	SG_ Vehicle_Communications_Malfunction : 50|1@1+0 [0|1] "" Vector__XXX
+	SG_ Intranet_Communication_Module_Malfunction : 51|1@1+0 [0|1] "" Vector__XXX
+	SG_ Current_Module_Failure : 52|1@1+0 [0|1] "" Vector__XXX
+	SG_ Main_Pressure_Detection_Module_Malfunction : 53|1@1+0 [0|1] "" Vector__XXX
+	SG_ Short_Circuit_Protection_Failure : 54|1@1+0 [0|1] "" Vector__XXX
+	SG_ Low_Voltage_No_Charging_Failure : 55|1@1+0 [0|1] "" Vector__XXX
+	SG_ GPS_or_Soft_Switch_MOS_Off : 56|1@1+0 [0|1] "" Vector__XXX
+	SG_ Reserved_1 : 57|8@1+0 [0|255] "" Vector__XXX
+
+CM_ SG_ "Reserved" 152 Reserved_0
+CM_ SG_ "One Stage Warning of Unit Over Voltage" 152 Unit_Over_Voltage_Warning_Stage_1
+CM_ SG_ "Two Stage Warning of Unit Over Voltage" 152 Unit_Over_Voltage_Warning_Stage_2
+CM_ SG_ "One Stage Warning of Unit Under Voltage" 152 Unit_Under_Voltage_Warning_Stage_1
+CM_ SG_ "Two Stage Warning of Unit Under Voltage" 152 Unit_Under_Voltage_Warning_Stage_2
+CM_ SG_ "One Stage Warning of Total Voltage Too High" 152 Total_Voltage_Too_High_Warning_Stage_1
+CM_ SG_ "Two Stage Warning of Total Voltage Too High" 152 Total_Voltage_Too_High_Warning_Stage_2
+CM_ SG_ "One Stage Warning of Total Voltage Too Low" 152 Total_Voltage_Too_Low_Warning_Stage_1
+CM_ SG_ "Two Stage Warning of Total Voltage Too Low" 152 Total_Voltage_Too_Low_Warning_Stage_2
+CM_ SG_ "One Stage Warning of Charging Temperature Too High" 152 Charging_Temperature_Too_High_Warning_Stage_1
+CM_ SG_ "Two Stage Warning of Charging Temperature Too High" 152 Charging_Temperature_Too_High_Warning_Stage_2
+CM_ SG_ "One Stage Warning of Charging Temperature Too Low" 152 Charging_Temperature_Too_Low_Warning_Stage_1
+CM_ SG_ "Two Stage Warning of Charging Temperature Too Low" 152 Charging_Temperature_Too_Low_Warning_Stage_2
+CM_ SG_ "One Stage Warning of Discharge Temperature Too High" 152 Discharge_Temperature_Too_High_Warning_Stage_1
+CM_ SG_ "Two Stage Warning of Discharge Temperature Too High" 152 Discharge_Temperature_Too_High_Warning_Stage_2
+CM_ SG_ "One Stage Warning of Discharge Temperature Too Low" 152 Discharge_Temperature_Too_Low_Warning_Stage_1
+CM_ SG_ "Two Stage Warning of Discharge Temperature Too Low" 152 Discharge_Temperature_Too_Low_Warning_Stage_2
+CM_ SG_ "Charge Over Current Warning Stage 1" 152 Charge_Over_Current_Warning_Stage_1
+CM_ SG_ "Charge Over Current Warning Stage 2" 152 Charge_Over_Current_Warning_Stage_2
+CM_ SG_ "Discharge Over Current Warning Stage 1" 152 Discharge_Over_Current_Warning_Stage_1
+CM_ SG_ "Discharge Over Current Warning Stage 2" 152 Discharge_Over_Current_Warning_Stage_2
+CM_ SG_ "SOC Too High Warning Stage 1" 152 SOC_Too_High_Warning_Stage_1
+CM_ SG_ "SOC Too High Warning Stage 2" 152 SOC_Too_High_Warning_Stage_2
+CM_ SG_ "SOC Too Low Warning Stage 1" 152 SOC_Too_Low_Warning_Stage_1
+CM_ SG_ "SOC Too Low Warning Stage 2" 152 SOC_Too_Low_Warning_Stage_2
+CM_ SG_ "Excessive Differential Pressure Warning Stage 1" 152 Excessive_Differential_Pressure_Warning_Stage_1
+CM_ SG_ "Excessive Differential Pressure Warning Stage 2" 152 Excessive_Differential_Pressure_Warning_Stage_2
+CM_ SG_ "Excessive Temperature Difference Warning Stage 1" 152 Excessive_Temperature_Difference_Warning_Stage_1
+CM_ SG_ "Excessive Temperature Difference Warning Stage 2" 152 Excessive_Temperature_Difference_Warning_Stage_2
+CM_ SG_ "Charging MOS Overtemperature Warning" 152 Charging_MOS_Overtemperature_Warning
+CM_ SG_ "Discharge MOS Overtemperature Warning" 152 Discharge_MOS_Overtemperature_Warning
+CM_ SG_ "Charging MOS Temperature Sensor Failure" 152 Charging_MOS_Temperature_Sensor_Failure
+CM_ SG_ "Discharge MOS Temperature Sensor Failure" 152 Discharge_MOS_Temperature_Sensor_Failure
+CM_ SG_ "Charging MOS Adhesion Failure" 152 Charging_MOS_Adhesion_Failure
+CM_ SG_ "Discharge MOS Adhesion Failure" 152 Discharge_MOS_Adhesion_Failure
+CM_ SG_ "Charging MOS Breaker Failure" 152 Charging_MOS_Breaker_Failure
+CM_ SG_ "Discharge MOS Breaker Failure" 152 Discharge_MOS_Breaker_Failure
+CM_ SG_ "AFE Acquisition Chip Malfunction" 152 AFE_Acquisition_Chip_Malfunction
+CM_ SG_ "Monomer Collect Drop Off" 152 Monomer_Collect_Drop_Off
+CM_ SG_ "Single Temperature Sensor Fault" 152 Single_Temperature_Sensor_Fault
+CM_ SG_ "EEPROM Storage Failures" 152 EEPROM_Storage_Failures
+CM_ SG_ "RTC Clock Malfunction" 152 RTC_Clock_Malfunction
+CM_ SG_ "Precharge Failure" 152 Precharge_Failure
+CM_ SG_ "Vehicle Communications Malfunction" 152 Vehicle_Communications_Malfunction
+CM_ SG_ "Intranet Communication Module Malfunction" 152 Intranet_Communication_Module_Malfunction
+CM_ SG_ "Current Module Failure" 152 Current_Module_Failure
+CM_ SG_ "Main Pressure Detection Module Malfunction" 152 Main_Pressure_Detection_Module_Malfunction
+CM_ SG_ "Short Circuit Protection Failure" 152 Short_Circuit_Protection_Failure
+CM_ SG_ "Low Voltage No Charging Failure" 152 Low_Voltage_No_Charging_Failure
+CM_ SG_ "GPS or Soft Switch MOS Off" 152 GPS_or_Soft_Switch_MOS_Off
+CM_ SG_ "Fault Code" 152 Fault_Code

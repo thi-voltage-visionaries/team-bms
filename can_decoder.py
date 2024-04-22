@@ -1,6 +1,5 @@
 import can
 import cantools
-import cantools.database
 
 dbc = cantools.database.load.file('can_database.dbc')
 

@@ -30,9 +30,9 @@ CM_ SG_ "Minimum Monomer Voltage Value" 145 Minimum_Monomer_Voltage_Value
 CM_ SG_ "Minimum Unit Voltage Cell No" 145 Minimum_Unit_Voltage_Cell_No
 
 BO_ 146 Maximum_Minimum_Temperature_of_Monomer: 8 0x92
-	SG_ Maximum_Monomer_Temperature : 0|8@1+40 [0|6553.5] "ø C" Vector__XXX
+	SG_ Maximum_Monomer_Temperature : 0|8@1+40 [0|6553.5] "Ã¸ C" Vector__XXX
 	SG_ Maximum_Monomer_Temperature_Cell_No : 8|8@1+0 [0|255] "" Vector__XXX
-	SG_ Minimum_Monomer_Temperature : 16|8@1+40 [0|6553.5] "ø C" Vector__XXX
+	SG_ Minimum_Monomer_Temperature : 16|8@1+40 [0|6553.5] "Ã¸ C" Vector__XXX
 	SG_ Minimum_Monomer_Temperature_Cell_No : 24|8@1+0 [0|255] "" Vector__XXX
 
 CM_ SG_ "Maximum Monomer Temperature" 146 Maximum_Monomer_Temperature
@@ -121,22 +121,22 @@ CM_ SG_ "Cell Voltage 16" 149 Cell_Voltage_16
 
 BO_ 150 Monomer_Temperature_1_to_16: 8 0x96
  	SG_ Frame_Number : 0|8@1+0 [0|255] "" Vector__XXX
- 	SG_ Monomer_Temperature_1 : 8|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_2 : 16|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_3 : 24|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_4 : 32|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_5 : 40|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_6 : 48|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_7 : 56|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_8 : 64|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_9 : 72|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_10 : 80|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_11 : 88|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_12 : 96|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_13 : 104|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_14 : 112|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_15 : 120|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_16 : 128|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_1 : 8|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_2 : 16|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_3 : 24|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_4 : 32|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_5 : 40|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_6 : 48|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_7 : 56|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_8 : 64|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_9 : 72|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_10 : 80|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_11 : 88|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_12 : 96|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_13 : 104|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_14 : 112|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_15 : 120|8@1+40 [40|95] "Ã¸C" Vector__XXX
+ 	SG_ Monomer_Temperature_16 : 128|8@1+40 [40|95] "Ã¸C" Vector__XXX
 
 CM_ SG_ "Frame Number" 150 Frame_Number
 CM_ SG_ "Monomer Temperature 1" 150 Monomer_Temperature_1
@@ -207,54 +207,54 @@ BO_ 151 Monomer_Equilibrium_State: 8 0x97
 	SG_ Monomer_47_Equilibrium_State : 54|1@1+0 [0|1] "" Vector__XXX
 	SG_ Monomer_48_Equilibrium_State : 55|1@1+0 [0|1] "" Vector__XXX
 
-CM_ SG_ "Monomer 1 equilibrium state" 149 MONOMER_EQ_STATE_01
-CM_ SG_ "Monomer 2 equilibrium state" 149 MONOMER_EQ_STATE_02
-CM_ SG_ "Monomer 3 equilibrium state" 149 MONOMER_EQ_STATE_03
-CM_ SG_ "Monomer 4 equilibrium state" 149 MONOMER_EQ_STATE_04
-CM_ SG_ "Monomer 5 equilibrium state" 149 MONOMER_EQ_STATE_05
-CM_ SG_ "Monomer 6 equilibrium state" 149 MONOMER_EQ_STATE_06
-CM_ SG_ "Monomer 7 equilibrium state" 149 MONOMER_EQ_STATE_07
-CM_ SG_ "Monomer 8 equilibrium state" 149 MONOMER_EQ_STATE_08
-CM_ SG_ "Monomer 9 equilibrium state" 149 MONOMER_EQ_STATE_09
-CM_ SG_ "Monomer 10 equilibrium state" 149 MONOMER_EQ_STATE_10
-CM_ SG_ "Monomer 11 equilibrium state" 149 MONOMER_EQ_STATE_11
-CM_ SG_ "Monomer 12 equilibrium state" 149 MONOMER_EQ_STATE_12
-CM_ SG_ "Monomer 13 equilibrium state" 149 MONOMER_EQ_STATE_13
-CM_ SG_ "Monomer 14 equilibrium state" 149 MONOMER_EQ_STATE_14
-CM_ SG_ "Monomer 15 equilibrium state" 149 MONOMER_EQ_STATE_15
-CM_ SG_ "Monomer 16 equilibrium state" 149 MONOMER_EQ_STATE_16
-CM_ SG_ "Monomer 17 equilibrium state" 149 MONOMER_EQ_STATE_17
-CM_ SG_ "Monomer 18 equilibrium state" 149 MONOMER_EQ_STATE_18
-CM_ SG_ "Monomer 19 equilibrium state" 149 MONOMER_EQ_STATE_19
-CM_ SG_ "Monomer 20 equilibrium state" 149 MONOMER_EQ_STATE_20
-CM_ SG_ "Monomer 21 equilibrium state" 149 MONOMER_EQ_STATE_21
-CM_ SG_ "Monomer 22 equilibrium state" 149 MONOMER_EQ_STATE_22
-CM_ SG_ "Monomer 23 equilibrium state" 149 MONOMER_EQ_STATE_23
-CM_ SG_ "Monomer 24 equilibrium state" 149 MONOMER_EQ_STATE_24
-CM_ SG_ "Monomer 25 equilibrium state" 149 MONOMER_EQ_STATE_25
-CM_ SG_ "Monomer 26 equilibrium state" 149 MONOMER_EQ_STATE_26
-CM_ SG_ "Monomer 27 equilibrium state" 149 MONOMER_EQ_STATE_27
-CM_ SG_ "Monomer 28 equilibrium state" 149 MONOMER_EQ_STATE_28
-CM_ SG_ "Monomer 29 equilibrium state" 149 MONOMER_EQ_STATE_29
-CM_ SG_ "Monomer 30 equilibrium state" 149 MONOMER_EQ_STATE_30
-CM_ SG_ "Monomer 31 equilibrium state" 149 MONOMER_EQ_STATE_31
-CM_ SG_ "Monomer 32 equilibrium state" 149 MONOMER_EQ_STATE_32
-CM_ SG_ "Monomer 33 equilibrium state" 149 MONOMER_EQ_STATE_33
-CM_ SG_ "Monomer 34 equilibrium state" 149 MONOMER_EQ_STATE_34
-CM_ SG_ "Monomer 35 equilibrium state" 149 MONOMER_EQ_STATE_35
-CM_ SG_ "Monomer 36 equilibrium state" 149 MONOMER_EQ_STATE_36
-CM_ SG_ "Monomer 37 equilibrium state" 149 MONOMER_EQ_STATE_37
-CM_ SG_ "Monomer 38 equilibrium state" 149 MONOMER_EQ_STATE_38
-CM_ SG_ "Monomer 39 equilibrium state" 149 MONOMER_EQ_STATE_39
-CM_ SG_ "Monomer 40 equilibrium state" 149 MONOMER_EQ_STATE_40
-CM_ SG_ "Monomer 41 equilibrium state" 149 MONOMER_EQ_STATE_41
-CM_ SG_ "Monomer 42 equilibrium state" 149 MONOMER_EQ_STATE_42
-CM_ SG_ "Monomer 43 equilibrium state" 149 MONOMER_EQ_STATE_43
-CM_ SG_ "Monomer 44 equilibrium state" 149 MONOMER_EQ_STATE_44
-CM_ SG_ "Monomer 45 equilibrium state" 149 MONOMER_EQ_STATE_45
-CM_ SG_ "Monomer 46 equilibrium state" 149 MONOMER_EQ_STATE_46
-CM_ SG_ "Monomer 47 equilibrium state" 149 MONOMER_EQ_STATE_47
-CM_ SG_ "Monomer 48 equilibrium state" 149 MONOMER_EQ_STATE_48
+CM_ SG_ "Monomer 1 equilibrium state" 151 MONOMER_EQ_STATE_01
+CM_ SG_ "Monomer 2 equilibrium state" 151 MONOMER_EQ_STATE_02
+CM_ SG_ "Monomer 3 equilibrium state" 151 MONOMER_EQ_STATE_03
+CM_ SG_ "Monomer 4 equilibrium state" 151 MONOMER_EQ_STATE_04
+CM_ SG_ "Monomer 5 equilibrium state" 151 MONOMER_EQ_STATE_05
+CM_ SG_ "Monomer 6 equilibrium state" 151 MONOMER_EQ_STATE_06
+CM_ SG_ "Monomer 7 equilibrium state" 151 MONOMER_EQ_STATE_07
+CM_ SG_ "Monomer 8 equilibrium state" 151 MONOMER_EQ_STATE_08
+CM_ SG_ "Monomer 9 equilibrium state" 151 MONOMER_EQ_STATE_09
+CM_ SG_ "Monomer 10 equilibrium state" 151 MONOMER_EQ_STATE_10
+CM_ SG_ "Monomer 11 equilibrium state" 151 MONOMER_EQ_STATE_11
+CM_ SG_ "Monomer 12 equilibrium state" 151 MONOMER_EQ_STATE_12
+CM_ SG_ "Monomer 13 equilibrium state" 151 MONOMER_EQ_STATE_13
+CM_ SG_ "Monomer 14 equilibrium state" 151 MONOMER_EQ_STATE_14
+CM_ SG_ "Monomer 15 equilibrium state" 151 MONOMER_EQ_STATE_15
+CM_ SG_ "Monomer 16 equilibrium state" 151 MONOMER_EQ_STATE_16
+CM_ SG_ "Monomer 17 equilibrium state" 151 MONOMER_EQ_STATE_17
+CM_ SG_ "Monomer 18 equilibrium state" 151 MONOMER_EQ_STATE_18
+CM_ SG_ "Monomer 19 equilibrium state" 151 MONOMER_EQ_STATE_19
+CM_ SG_ "Monomer 20 equilibrium state" 151 MONOMER_EQ_STATE_20
+CM_ SG_ "Monomer 21 equilibrium state" 151 MONOMER_EQ_STATE_21
+CM_ SG_ "Monomer 22 equilibrium state" 151 MONOMER_EQ_STATE_22
+CM_ SG_ "Monomer 23 equilibrium state" 151 MONOMER_EQ_STATE_23
+CM_ SG_ "Monomer 24 equilibrium state" 151 MONOMER_EQ_STATE_24
+CM_ SG_ "Monomer 25 equilibrium state" 151 MONOMER_EQ_STATE_25
+CM_ SG_ "Monomer 26 equilibrium state" 151 MONOMER_EQ_STATE_26
+CM_ SG_ "Monomer 27 equilibrium state" 151 MONOMER_EQ_STATE_27
+CM_ SG_ "Monomer 28 equilibrium state" 151 MONOMER_EQ_STATE_28
+CM_ SG_ "Monomer 29 equilibrium state" 151 MONOMER_EQ_STATE_29
+CM_ SG_ "Monomer 30 equilibrium state" 151 MONOMER_EQ_STATE_30
+CM_ SG_ "Monomer 31 equilibrium state" 151 MONOMER_EQ_STATE_31
+CM_ SG_ "Monomer 32 equilibrium state" 151 MONOMER_EQ_STATE_32
+CM_ SG_ "Monomer 33 equilibrium state" 151 MONOMER_EQ_STATE_33
+CM_ SG_ "Monomer 34 equilibrium state" 151 MONOMER_EQ_STATE_34
+CM_ SG_ "Monomer 35 equilibrium state" 151 MONOMER_EQ_STATE_35
+CM_ SG_ "Monomer 36 equilibrium state" 151 MONOMER_EQ_STATE_36
+CM_ SG_ "Monomer 37 equilibrium state" 151 MONOMER_EQ_STATE_37
+CM_ SG_ "Monomer 38 equilibrium state" 151 MONOMER_EQ_STATE_38
+CM_ SG_ "Monomer 39 equilibrium state" 151 MONOMER_EQ_STATE_39
+CM_ SG_ "Monomer 40 equilibrium state" 151 MONOMER_EQ_STATE_40
+CM_ SG_ "Monomer 41 equilibrium state" 151 MONOMER_EQ_STATE_41
+CM_ SG_ "Monomer 42 equilibrium state" 151 MONOMER_EQ_STATE_42
+CM_ SG_ "Monomer 43 equilibrium state" 151 MONOMER_EQ_STATE_43
+CM_ SG_ "Monomer 44 equilibrium state" 151 MONOMER_EQ_STATE_44
+CM_ SG_ "Monomer 45 equilibrium state" 151 MONOMER_EQ_STATE_45
+CM_ SG_ "Monomer 46 equilibrium state" 151 MONOMER_EQ_STATE_46
+CM_ SG_ "Monomer 47 equilibrium state" 151 MONOMER_EQ_STATE_47
+CM_ SG_ "Monomer 48 equilibrium state" 151 MONOMER_EQ_STATE_48
 
 BO_ 152 Battery_Failure_Status: 8 0x98
 	SG_ Reserved_0 : 0|8@1+0 [0|255] "" Vector__XXX

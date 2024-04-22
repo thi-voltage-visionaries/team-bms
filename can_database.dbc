@@ -30,9 +30,9 @@ CM_ SG_ "Minimum Monomer Voltage Value" 145 Minimum_Monomer_Voltage_Value
 CM_ SG_ "Minimum Unit Voltage Cell No" 145 Minimum_Unit_Voltage_Cell_No
 
 BO_ 146 Maximum_Minimum_Temperature_of_Monomer: 8 0x92
-	SG_ Maximum_Monomer_Temperature : 0|8@1+40 [0|6553.5] "ø C" Vector__XXX
+	SG_ Maximum_Monomer_Temperature : 0|8@1+40 [0|6553.5] "°C" Vector__XXX
 	SG_ Maximum_Monomer_Temperature_Cell_No : 8|8@1+0 [0|255] "" Vector__XXX
-	SG_ Minimum_Monomer_Temperature : 16|8@1+40 [0|6553.5] "ø C" Vector__XXX
+	SG_ Minimum_Monomer_Temperature : 16|8@1+40 [0|6553.5] "°C" Vector__XXX
 	SG_ Minimum_Monomer_Temperature_Cell_No : 24|8@1+0 [0|255] "" Vector__XXX
 
 CM_ SG_ "Maximum Monomer Temperature" 146 Maximum_Monomer_Temperature
@@ -121,22 +121,22 @@ CM_ SG_ "Cell Voltage 16" 149 Cell_Voltage_16
 
 BO_ 150 Monomer_Temperature_1_to_16: 8 0x96
  	SG_ Frame_Number : 0|8@1+0 [0|255] "" Vector__XXX
- 	SG_ Monomer_Temperature_1 : 8|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_2 : 16|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_3 : 24|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_4 : 32|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_5 : 40|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_6 : 48|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_7 : 56|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_8 : 64|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_9 : 72|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_10 : 80|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_11 : 88|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_12 : 96|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_13 : 104|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_14 : 112|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_15 : 120|8@1+40 [40|95] "øC" Vector__XXX
- 	SG_ Monomer_Temperature_16 : 128|8@1+40 [40|95] "øC" Vector__XXX
+ 	SG_ Monomer_Temperature_1 : 8|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_2 : 16|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_3 : 24|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_4 : 32|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_5 : 40|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_6 : 48|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_7 : 56|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_8 : 64|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_9 : 72|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_10 : 80|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_11 : 88|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_12 : 96|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_13 : 104|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_14 : 112|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_15 : 120|8@1+40 [40|95] "°C" Vector__XXX
+ 	SG_ Monomer_Temperature_16 : 128|8@1+40 [40|95] "°C" Vector__XXX
 
 CM_ SG_ "Frame Number" 150 Frame_Number
 CM_ SG_ "Monomer Temperature 1" 150 Monomer_Temperature_1

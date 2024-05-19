@@ -17,7 +17,7 @@ def load_json(file_path):
     with open(file_path, 'r') as f:
         return json.load(f)
     
-json_directory = '/home/test/Desktop/team-bms/battery_data'
+json_directory = '/home/test/Desktop/team-bms/battery_data_json'
 
 # Initialisierung LCD-Display
 lcd = CharLCD(i2c_expander='PCF8574',

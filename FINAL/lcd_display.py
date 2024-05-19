@@ -6,7 +6,7 @@ from RPLCD.i2c import CharLCD
 
 # Funktion um die neueste JSON-Datei zu finden
 def get_latest_json_file(directory):
-    files = glob(os.path.join(directory, "*.json"))
+    files = glob(os.path.join(directory, "battery_data_*.json"))
     if not files:
         return None
     latest_file = max(files, key=os.path.getctime)

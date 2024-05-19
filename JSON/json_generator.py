@@ -28,7 +28,7 @@ def write_to_json(data, folder, filename): #Batteriedaten in JSON-Datei schreibe
         json.dump(data, json_file)
 
 __name__ == "__main__"
-folder_path = "battery_data" #Ordner für JSON-Dateien
+folder_path = "battery_data_json" #Ordner für JSON-Dateien
 
 while True:
     timestamp = int(time.time()) #Unix-Zeitstempel

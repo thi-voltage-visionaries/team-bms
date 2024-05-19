@@ -4,7 +4,7 @@ import time
 import os
 
 # Folder
-output_folder = "battery_data"
+output_folder = "battery_data_json"
 
 while True:
     #Open Daly BMS UART message 

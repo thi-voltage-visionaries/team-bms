@@ -48,8 +48,6 @@ try:
             # Display löschen
             lcd.clear()
             # Werte auf dem Display anzeigen
-            # lcd.cursor_pos(0, 0) -> Position auf dem LCD-Display
-            # lcd.write_string(voltage[:20]) -> Stellt sicher das es nicht über 20 Spalten geht
             lcd.write_string("U: ", voltage[:10])
             lcd.cursor_pos = (0, 10)
             lcd.write_string("I: ", current[:10])

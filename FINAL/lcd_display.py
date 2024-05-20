@@ -50,7 +50,16 @@ try:
             # Werte auf dem Display anzeigen
             # lcd.cursor_pos(0, 0) -> Position auf dem LCD-Display
             # lcd.write_string(voltage[:20]) -> Stellt sicher das es nicht über 20 Spalten geht
-            # ... ergänzen ...
+            lcd.write_string("U: ", voltage[:10])
+            lcd.cursor_pos = (0, 10)
+            lcd.write_string("I: ", current[:10])
+            lcd.cursor_pos = (1, 0)
+            lcd.write_string("SOC: ", soc[:20])
+            lcd.cursor_pos = (2, 0)
+            lcd.write_string("Temp: ", temp[:20])
+            lcd.cursor_pos = (3, 0)
+            lcd.write_string("C: ", capacity[:20])
+        
             time.sleep(5)
 except KeyboardInterrupt:
     pass

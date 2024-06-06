@@ -45,7 +45,7 @@ Wire the batteries to the BMS and the Power Supply like this:
 
 Use the enclosed UART-USB cable to connect the BMS to Raspberry Pi.
 
-Plug the 6-pin connector to BMS and USB-A port to one of the USB-ports of the Raspberry Pi.
+Plug the 6-pin connector to BMS and USB-A port to the first USB-port of your Raspberry Pi.
 
 3. Connect the I2C-display to Raspberry Pi like this:
 
@@ -53,7 +53,20 @@ Plug the 6-pin connector to BMS and USB-A port to one of the USB-ports of the Ra
 
 <img width="669" alt="Bildschirmfoto 2024-06-06 um 15 10 52" src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/e80c005d-2181-47bb-b087-f35e08be1e55">
 
+4. After the hardware setup you have to download some libraries
 
+• Module for reading Daly-BMS data:
 
+With "pip install dalybms" you download a python module the read out the BMS with bluetooth or UART.
+
+Follow the steps on this website: https://pypi.org/project/dalybms/
+
+• Repository for I2C-Display drivers:
+
+Use "git clone https://github.com/the-raspberry-pi-guy/lcd.git" to download the repository to interface a 16x2 LCD display.
+
+For more information check this website: https://github.com/the-raspberry-pi-guy/lcd
+
+Save the i2c_display.py file also in this folder to be able to use the drivers.
 
 

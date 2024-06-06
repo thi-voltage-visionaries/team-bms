@@ -75,7 +75,7 @@ Plug the 6-pin connector to BMS and USB-A port to the first USB-port of your Ras
 
 • Module for reading Daly-BMS data:
 
-With "pip install dalybms" you download a python module the read out the BMS with bluetooth or UART.
+Use "pip install dalybms" to download the python module for reading the BMS via bluetooth or UART.
 
 Follow the steps on this website: https://pypi.org/project/dalybms/
 

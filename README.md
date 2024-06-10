@@ -4,7 +4,7 @@
 
 ## Quick-Start-Guide
 
-**1. Before you start**:
+**Before you start**:
 
 - In the folder **FINAL** you can find two python scripts **bms_reader.py** and **i2c_display.py**.
 
@@ -12,7 +12,7 @@
 
 - If you want to quit both files, a keyboard input is necessary. Use **ctrl + c** to quit.
 
-**2. Explanation bms_reader.py**:
+**Explanation bms_reader.py**:
 
 - When you start the **bms_reader.py**, every twenty seconds a new json file is generated.
 
@@ -24,7 +24,7 @@
 
 - They're all saved in the folder: **battery_data_json**.
 
-**3. Explanation i2c_display.py**:
+**Explanation i2c_display.py**:
    
 - When you start the **i2c_display.py**, it checks if a new json file arrived in the folder.
 

@@ -2,17 +2,35 @@
 
 <img src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/4cfa2aeb-6bf4-47f2-9fbf-743a0f53c178" width="500" height="500">
 
-In the folder **FINAL** you can find two python scripts **bms_reader.py** and **i2c_display.py**.
+## Quick-Start-Guide
 
-Both python files need to be started with **two different ssh-connections** via the terminal of your computer.
+**1. Before you start**:
 
-When you start the **bms_reader.py**, every ten seconds a new json file is generated.
+- In the folder **FINAL** you can find two python scripts **bms_reader.py** and **i2c_display.py**.
 
-The json file contains: **soc, voltage, current, temperature and capacity**
+- Both python files needs to be started with two different ssh-connections via the terminal of your computer.
 
-All json files have an individual Unix-timestamp in their file name.
+- If you want to quit both files, a keyboard input is necessary. Use **ctrl + c** to quit.
 
-They're all saved in the battery_data
+**2. Explanation bms_reader.py**:
+
+- When you start the **bms_reader.py**, every twenty seconds a new json file is generated.
+
+- Json file contains: **soc, voltage, current, temperature and capacity**.
+
+- All json files have an individual Unix timestamp in their file name.
+
+- Json file name example: **battery_data_{timestamp}.json**.
+
+- They're all saved in the folder: **battery_data_json**.
+
+**3. Explanation i2c_display.py**:
+   
+- When you start the **i2c_display.py**, it checks if a new json file arrived in the folder.
+
+- If a new file is found, it extracts the battery data from the json file.
+
+- And is then visualized on the I2C-display.
 
 ## How to start the UART-reader for the Daly-Smart-BMS
    
@@ -31,7 +49,7 @@ They're all saved in the battery_data
    python3 bms_reader.py
    ```
 
-## How to start the LCD-display for the Raspberry Pi
+## How to start the I2C-display for the Raspberry Pi
    
 1. Open this folder:
    ```
@@ -54,7 +72,7 @@ They're all saved in the battery_data
 
 - 2x Raspberry Pi 5 [Berrybase](https://www.berrybase.de/raspberry-pi-5-8gb-ram)
 
-- 2x LORA-HATs for Raspberry Pi [Waveshare](https://www.waveshare.com/sx1262-868m-lora-hat.htm)
+- 2x LORA-HAT for Raspberry Pi [Waveshare](https://www.waveshare.com/sx1262-868m-lora-hat.htm)
 
 - I2C-Display for Raspberry Pi [AZ-delivery](https://www.az-delivery.de/products/hd44780-2004-lcd-display-bundle-4x20-zeichen-mit-i2c-schnittstelle)
 
@@ -62,9 +80,9 @@ They're all saved in the battery_data
  
 - Daly Smart BMS 3S 12V 30A [Amazon](https://www.amazon.de/DALY-Programmierbares-Li-Ion-Batterieschutzplatine-CAN-Kommunikation-Batterieschutzmodul-Smart-BMS-UART-485-CAN-BT/dp/B0B52Z4C6F/ref=sr_1_1?__mk_de_DE=ÅMÅŽÕÑ&crid=2O0I0OU97RRUC&dib=eyJ2IjoiMSJ9.nfZpvxY-7ZKIyxBi8RKbjfCjSErGZKg5_FhlCucBPexAj9wTkxIEImSSBPyEfEyg7e2__jLER3yxW9w8YCyCREWONMV8udEGl8bccmqbqMAFCauyStXk3CNTbPODwtsv1Q_lBqTVNem7moq1reMF4iZ-TzhX-0utL_BP9JqPX512PalxOXu1uSvSechMJ0TY2yzxK8miVYdT0AK3pWQL5s-_ZGfSPG3e-3HwAwcwKt0.LQcR7npzQ7WvkFCZRL_Looyjln3xuhinC2Sh_9ZQJ8s&dib_tag=se&keywords=daly%2Bsmart%2Bbms%2B3s%2B12v%2B30a&qid=1717681620&sprefix=daly%2Bsmart%2Bbms%2B3s%2B12%2B%2Caps%2C422&sr=8-1&th=1)
        
-- 3x 18650 Li-Ion battery cells [Akkushop](https://www.akkushop.de/de/sony-konion-us18650vtc5-2600mah-36v-37v-654x182mm-mit-loetfahne-u/?gad_source=1&gclid=CjwKCAjwvIWzBhAlEiwAHHWgvdeJbn3S9KlfwelRqTj_DZ0MY1e8mpTiXzy03aw5u1-dA221t2gdXxoCXokQAvD_BwE)
+- 3x 18650 Li-Ion battery cell [Akkushop](https://www.akkushop.de/de/sony-konion-us18650vtc5-2600mah-36v-37v-654x182mm-mit-loetfahne-u/?gad_source=1&gclid=CjwKCAjwvIWzBhAlEiwAHHWgvdeJbn3S9KlfwelRqTj_DZ0MY1e8mpTiXzy03aw5u1-dA221t2gdXxoCXokQAvD_BwE)
 
-- Bracket for 18650 Li-Ion battery cells [Amazon](https://www.amazon.de/GTIWUNG-Batteriehalter-Kunststoff-Abdeckung-Aufbewahrungsbox-12-Stück-3-7V-18650/dp/B08PZ4GVSD/ref=sr_1_21_sspa?__mk_de_DE=ÅMÅŽÕÑ&crid=288J965ELF7C9&dib=eyJ2IjoiMSJ9.1452SChiDavnz1YhivqquYca_tJp86ORIDnJW353Ml1oX2DohscWspUeIrmTft39vLa3X1WFIn5fshwO4U748XGklUaM0RI3Yjh_1P1k9_wgwW3ZxwLB7ZA_l1fuT0B8qEBFyakF9ntQA7767P78tavIBfQ-AztMaKYF2MER2-fklkPSq8FC1Dx5OKZS_p4k-gFG48qUT4Te59V1s5rngGdis_ejAcsRoP_JcRmr_Tw.KzXsdC_9xJoPDr3ZES3HanyaVtXy3UmYDtpm09Brd2U&dib_tag=se&keywords=battery%2Bholder%2B18650%2Bsolder%2B3&qid=1717681553&sprefix=battery%2Bholder%2B18650%2Bsold%2B3%2Caps%2C427&sr=8-21-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9idGY&th=1)
+- Bracket for 18650 Li-Ion battery cell [Amazon](https://www.amazon.de/GTIWUNG-Batteriehalter-Kunststoff-Abdeckung-Aufbewahrungsbox-12-Stück-3-7V-18650/dp/B08PZ4GVSD/ref=sr_1_21_sspa?__mk_de_DE=ÅMÅŽÕÑ&crid=288J965ELF7C9&dib=eyJ2IjoiMSJ9.1452SChiDavnz1YhivqquYca_tJp86ORIDnJW353Ml1oX2DohscWspUeIrmTft39vLa3X1WFIn5fshwO4U748XGklUaM0RI3Yjh_1P1k9_wgwW3ZxwLB7ZA_l1fuT0B8qEBFyakF9ntQA7767P78tavIBfQ-AztMaKYF2MER2-fklkPSq8FC1Dx5OKZS_p4k-gFG48qUT4Te59V1s5rngGdis_ejAcsRoP_JcRmr_Tw.KzXsdC_9xJoPDr3ZES3HanyaVtXy3UmYDtpm09Brd2U&dib_tag=se&keywords=battery%2Bholder%2B18650%2Bsolder%2B3&qid=1717681553&sprefix=battery%2Bholder%2B18650%2Bsold%2B3%2Caps%2C427&sr=8-21-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9idGY&th=1)
 
 - Breadboard [Amazon](https://www.amazon.de/Elegoo-Points-Mini-Breadboard-Arduino/dp/B01M9CHKO4/ref=sxin_12_pa_sp_search_thematic_sspa?__mk_de_DE=ÅMÅŽÕÑ&content-id=amzn1.sym.889d1a42-4b89-467a-a9a5-747ec57750bb%3Aamzn1.sym.889d1a42-4b89-467a-a9a5-747ec57750bb&cv_ct_cx=breadboard&dib=eyJ2IjoiMSJ9.YUpyuUfyhAe-QuOj86N8B4Xl0S1KZd-UUefZ3hghHWVHpvnZzneUXLTUs72tgnPUp7APk2KY_bWnnAdkpPdyXg.5uNhzuSYimW4fk3P033sIlraONMTj_rq4-krhF27TFE&dib_tag=se&keywords=breadboard&pd_rd_i=B01M9CHKO4&pd_rd_r=ece7bd6f-52b7-412a-b1aa-a44b00aa2dae&pd_rd_w=Iwc3W&pd_rd_wg=7sFuM&pf_rd_p=889d1a42-4b89-467a-a9a5-747ec57750bb&pf_rd_r=5NV5H2Q5Z7MSY7M6SZ04&qid=1717682207&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-2-0bff13d2-7188-4a82-bb3a-ccd1e70f0167-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1)
 
@@ -102,4 +120,6 @@ pip install dalybms
 ```
 git clone https://github.com/the-raspberry-pi-guy/lcd.git
 ```
+**Important:** i2c_display.py needs to be saved in this folder, so that drivers are working correctly.
+
 **For more information check this website:** [GitHub](https://github.com/the-raspberry-pi-guy/lcd)

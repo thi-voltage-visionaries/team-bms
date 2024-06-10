@@ -1,5 +1,8 @@
 # How to control batteries in combination with Daly Smart BMS and Raspberry Pi
-In the folder FINAL you can find two python scripts "bms_reader.py" and "i2c_display.py".
+
+<img src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/4cfa2aeb-6bf4-47f2-9fbf-743a0f53c178" width="500" height="500">
+
+In the folder **FINAL** you can find two python scripts **bms_reader.py** and **i2c_display.py**.
 
 Both python files need to be started with two different ssh-connections via the terminal of your computer.
 
@@ -61,38 +64,34 @@ Both python files need to be started with two different ssh-connections via the 
 
 ## Step-by-Step Guide
 
-1. Setup the lithium cells to battery management system (BMS) and power supply
-   
-Wire the batteries to the BMS and the Power Supply like this:
-   
-![三元3串接线流程-英文_012](https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/079fa2da-7106-407b-9c23-8b311a45efe0)
-
-2. Connect the BMS to the Raspberry Pi:
-
-Use the enclosed UART-USB cable to connect the BMS to Raspberry Pi.
-
-Plug the 6-pin connector to BMS and USB-A port to the first USB-port of your Raspberry Pi.
-
-3. Connect the I2C-display to Raspberry Pi like this:
-
-<img width="647" alt="Bildschirmfoto 2024-06-06 um 15 03 04" src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/a2301da1-ed09-4211-9fcc-c65d65edf7f0">
-
-<img width="669" alt="Bildschirmfoto 2024-06-06 um 15 10 52" src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/e80c005d-2181-47bb-b087-f35e08be1e55">
-
-4. After the hardware setup you have to download some libraries
-
-• Module for reading Daly-BMS data:
-
-Use "pip install dalybms" to download the python module for reading the BMS via bluetooth or UART.
-
-Follow the steps on this website: https://pypi.org/project/dalybms/
-
-• Repository for I2C-Display drivers:
-
-Use "git clone https://github.com/the-raspberry-pi-guy/lcd.git" to download the repository to interface a 16x2 LCD display.
-
-For more information check this website: https://github.com/the-raspberry-pi-guy/lcd
-
-Save the i2c_display.py file also in this folder to be able to use the drivers.
+### 1. Setup the Hardware
+- Wire the three Li-Ion battery cells to the Daly-Smart-BMS:
+   ![三元3串接线流程-英文_012](https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/f7a5280a-7ee8-4864-bd47-6b999ed66ca1)
 
 
+   **For more information check this website:** [Daly](https://www.dalybms.com/bms-wiring-tutorial-2/?_gl=1*t4qdqc*_up*MQ..*_ga*MTc5NzQzMzgxOS4xNzE4MDI3MjY5*_ga_QJJLNQB8EJ*MTcxODAyNzI2OC4xLjAuMTcxODAyNzI2OC4wLjAuMA..*_ga_RPN8G89S7P*MTcxODAyNzI2OC4xLjAuMTcxODAyNzI2OC4wLjAuMA..&gclid=CjwKCAjwyJqzBhBaEiwAWDRJVKBu5Kb6dW-XVRdvnflk8SaZ5ARGhr5n8a_GkJ4UVz-WR8ddkm-RZRoC_U0QAvD_BwE)
+
+- Connect the Daly Smart BMS with the enclosed UART-USB-A cable to Raspberry Pi:
+
+- Connect the I2C-display to Raspberry Pi with this Pinout:
+
+<img width="600" alt="Bildschirmfoto 2024-06-06 um 15 03 04" src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/a2301da1-ed09-4211-9fcc-c65d65edf7f0">
+
+<img width="600" alt="Bildschirmfoto 2024-06-06 um 15 10 52" src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/e80c005d-2181-47bb-b087-f35e08be1e55">
+
+**For more information check this website:** [Tutorial-RaspberryPi](https://tutorials-raspberrypi.de/hd44780-lcd-display-per-i2c-mit-dem-raspberry-pi-ansteuern/)
+
+### 2. Package installments
+
+• Python Module for Daly-Smart-BMS:
+```
+pip install dalybms
+```
+
+**For more information check this website:** [PyPi](https://pypi.org/project/dalybms/)
+
+• GitHub Repository for I2C-Display drivers:
+```
+git clone https://github.com/the-raspberry-pi-guy/lcd.git
+```
+**For more information check this website:** [GitHub](https://github.com/the-raspberry-pi-guy/lcd)

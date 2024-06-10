@@ -4,7 +4,15 @@
 
 In the folder **FINAL** you can find two python scripts **bms_reader.py** and **i2c_display.py**.
 
-Both python files need to be started with two different ssh-connections via the terminal of your computer.
+Both python files need to be started with **two different ssh-connections** via the terminal of your computer.
+
+When you start the **bms_reader.py**, every ten seconds a new json file is generated.
+
+The json file contains: **soc, voltage, current, temperature and capacity**
+
+All json files have an individual Unix-timestamp in their file name.
+
+They're all saved in the battery_data
 
 ## How to start the UART-reader for the Daly-Smart-BMS
    

@@ -6,7 +6,7 @@ In the folder **FINAL** you can find two python scripts **bms_reader.py** and **
 
 Both python files need to be started with two different ssh-connections via the terminal of your computer.
 
-## How to start the UART-reader for the Daly Smart BMS
+## How to start the UART-reader for the Daly-Smart-BMS
    
 1. Open this folder:
    ```
@@ -23,7 +23,7 @@ Both python files need to be started with two different ssh-connections via the 
    python3 bms_reader.py
    ```
 
-## How to start the LCD-display for the Raspberry Pi 5
+## How to start the LCD-display for the Raspberry Pi
    
 1. Open this folder:
    ```

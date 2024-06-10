@@ -6,8 +6,10 @@ Both python files need to be started with two different ssh-connections via the 
 
 1. Open the terminal
    
-2. Write: cd Desktop/team-bms
-   
+2. Write:
+   ```
+   cd Desktop/team-bms
+   ```
    Included content:
    
    • folder for all generated json files
@@ -16,8 +18,10 @@ Both python files need to be started with two different ssh-connections via the 
    
    • python file: automation_start.py (programm to automatically start all python files)
 
-3. Start the UART-reader: python3 bms_reader.py
-   
+4. Start the UART-reader:
+   ```
+   python3 bms_reader.py
+   ```
 
 # How to start the LCD-display for the Raspberry Pi 5
 

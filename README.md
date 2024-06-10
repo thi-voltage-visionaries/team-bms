@@ -1,43 +1,41 @@
-# How to control the batteries in combination with Daly BMS with the Raspberry Pi 5
+# How to control batteries in combination with Daly Smart BMS and Raspberry Pi
 In the folder FINAL you can find two python scripts "bms_reader.py" and "i2c_display.py".
 
 Both python files need to be started with two different ssh-connections via the terminal of your computer.
 
 ## How to start the UART-reader for the Daly Smart BMS
-
-1. Open the terminal
    
-2. Write:
+1. Open this folder:
    ```
    cd Desktop/team-bms
    ```
-   Included content:
+   This folder contains:
    
-   • folder for all generated json files
+   - folder for all generated json files
    
-   • python file: bms_reader.py (UART-reader)
-   
-   • python file: automation_start.py (programm to automatically start all python files)
+   - python file: bms_reader.py
 
-4. Start the UART-reader:
+4. Start the python script:
    ```
    python3 bms_reader.py
    ```
 
 ## How to start the LCD-display for the Raspberry Pi 5
-
-1. Open the terminal
    
-2. Write: cd lcd
-
-   Included content:
+1. Open this folder:
+   ```
+   cd lcd
+   ```
+   This folder contains:
    
-   • Here you can find all the drivers for running the lcd panel via I2C
+   - display drivers
    
-   • python file: i2c_display.py
+   - python file: i2c_display.py
 
-4. Start the I2C-display: python3 i2c_display.py
-
+4. Start the python script:
+   ```
+   python3 i2c_display.py
+   ```
 # Required components
 
 • 2x Raspberry Pi 5; Link: https://www.berrybase.de/raspberry-pi-5-8gb-ram

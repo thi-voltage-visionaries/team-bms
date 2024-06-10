@@ -14,9 +14,9 @@ Both python files need to be started with two different ssh-connections via the 
    ```
    **This folder contains:**
    
-   - folder for all generated json files
+   • folder for all generated json files
    
-   - python file: bms_reader.py
+   • python file: bms_reader.py
 
 4. Start the python script:
    ```
@@ -31,9 +31,9 @@ Both python files need to be started with two different ssh-connections via the 
    ```
    **This folder contains:**
    
-   - display drivers
+   • display drivers
    
-   - python file: i2c_display.py
+   • python file: i2c_display.py
 
 4. Start the python script:
    ```
@@ -66,18 +66,18 @@ Both python files need to be started with two different ssh-connections via the 
 
 ### 1. Setup the Hardware
 - Wire the three Li-Ion battery cells to the Daly-Smart-BMS:
-   ![三元3串接线流程-英文_012](https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/f7a5280a-7ee8-4864-bd47-6b999ed66ca1)
+<img width="835" alt="Bildschirmfoto 2024-06-10 um 19 25 10" src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/44e7ed4b-a8c9-4c6e-aae1-04883278459c">
 
 
-   **For more information check this website:** [Daly](https://www.dalybms.com/bms-wiring-tutorial-2/?_gl=1*t4qdqc*_up*MQ..*_ga*MTc5NzQzMzgxOS4xNzE4MDI3MjY5*_ga_QJJLNQB8EJ*MTcxODAyNzI2OC4xLjAuMTcxODAyNzI2OC4wLjAuMA..*_ga_RPN8G89S7P*MTcxODAyNzI2OC4xLjAuMTcxODAyNzI2OC4wLjAuMA..&gclid=CjwKCAjwyJqzBhBaEiwAWDRJVKBu5Kb6dW-XVRdvnflk8SaZ5ARGhr5n8a_GkJ4UVz-WR8ddkm-RZRoC_U0QAvD_BwE)
+**For more information check this website:** [Daly](https://www.dalybms.com/bms-wiring-tutorial-2/?_gl=1*t4qdqc*_up*MQ..*_ga*MTc5NzQzMzgxOS4xNzE4MDI3MjY5*_ga_QJJLNQB8EJ*MTcxODAyNzI2OC4xLjAuMTcxODAyNzI2OC4wLjAuMA..*_ga_RPN8G89S7P*MTcxODAyNzI2OC4xLjAuMTcxODAyNzI2OC4wLjAuMA..&gclid=CjwKCAjwyJqzBhBaEiwAWDRJVKBu5Kb6dW-XVRdvnflk8SaZ5ARGhr5n8a_GkJ4UVz-WR8ddkm-RZRoC_U0QAvD_BwE)
 
 - Connect the Daly Smart BMS with the enclosed UART-USB-A cable to Raspberry Pi:
 
 - Connect the I2C-display to Raspberry Pi with this Pinout:
 
-<img width="600" alt="Bildschirmfoto 2024-06-06 um 15 03 04" src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/a2301da1-ed09-4211-9fcc-c65d65edf7f0">
+<img width="836" alt="Bildschirmfoto 2024-06-10 um 19 25 06" src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/f3c27d67-462f-407b-8b84-b6c536b4dbe1">
+<img width="841" alt="Bildschirmfoto 2024-06-10 um 19 25 02" src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/295b230a-d347-4d53-b4c4-0345a0f5c1ef">
 
-<img width="600" alt="Bildschirmfoto 2024-06-06 um 15 10 52" src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/e80c005d-2181-47bb-b087-f35e08be1e55">
 
 **For more information check this website:** [Tutorial-RaspberryPi](https://tutorials-raspberrypi.de/hd44780-lcd-display-per-i2c-mit-dem-raspberry-pi-ansteuern/)
 

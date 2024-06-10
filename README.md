@@ -1,4 +1,4 @@
-# How to control batteries with Daly-Smart-BMS and Raspberry Pi
+# How to control batteries with Daly-Smart-BMS and Raspberry Pi via UART
 
 <img src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/4cfa2aeb-6bf4-47f2-9fbf-743a0f53c178" width="500" height="500">
 
@@ -48,7 +48,7 @@
    
    • python file: bms_reader.py
 
-4. Start the python script:
+2. Start the python script:
    ```
    python3 bms_reader.py
    ```

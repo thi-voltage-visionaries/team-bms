@@ -36,7 +36,7 @@
 
 - And is then visualized on the I2C-display.
 
-## How to start the UART-reader for the Daly-Smart-BMS
+## How to start the BMS-reader for the Daly-Smart-BMS
    
 1. Open this folder:
    ```

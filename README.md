@@ -44,9 +44,9 @@
    ```
    **This folder contains:**
    
-   • folder: battery_data_json (includes all generated json files)
+   - folder: battery_data_json (includes all generated json files)
    
-   • python file: bms_reader.py
+   - python file: bms_reader.py
 
 2. Start the python script:
    ```
@@ -61,9 +61,9 @@
    ```
    **This folder contains:**
    
-   • display drivers
+   - display drivers
    
-   • python file: i2c_display.py
+   - python file: i2c_display.py
 
 4. Start the python script:
    ```
@@ -109,7 +109,7 @@
 <img width="841" alt="Bildschirmfoto 2024-06-10 um 19 25 02" src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/295b230a-d347-4d53-b4c4-0345a0f5c1ef">
 
 
-**For more information check this website:** [Tutorial-RaspberryPi](https://tutorials-raspberrypi.de/hd44780-lcd-display-per-i2c-mit-dem-raspberry-pi-ansteuern/)
+**For more information check this website:** [Tutorials-RaspberryPi](https://tutorials-raspberrypi.de/hd44780-lcd-display-per-i2c-mit-dem-raspberry-pi-ansteuern/)
 
 ### 2. Package installments
 

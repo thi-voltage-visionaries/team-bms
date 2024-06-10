@@ -12,6 +12,10 @@
 
 - If you want to quit both files, a keyboard input is necessary. Use **ctrl + c** to quit.
 
+- Raspberry Pi name: **test@bp1** and **bp2@bp2**
+
+- Raspberry Pi password: **batteryproject**
+
 **Explanation bms_reader.py**:
 
 - When you start the **bms_reader.py**, every twenty seconds a new json file is generated.
@@ -40,7 +44,7 @@
    ```
    **This folder contains:**
    
-   • folder for all generated json files
+   • folder: battery_data_json (includes all generated json files)
    
    • python file: bms_reader.py
 
@@ -99,7 +103,7 @@
 
 - Connect the Daly Smart BMS with the enclosed UART-USB-A cable to Raspberry Pi:
 
-- Connect the I2C-display to Raspberry Pi with this Pinout:
+- Connect the I2C-display to Raspberry Pi with the help of this Pinout:
 
 <img width="836" alt="Bildschirmfoto 2024-06-10 um 19 25 06" src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/f3c27d67-462f-407b-8b84-b6c536b4dbe1">
 <img width="841" alt="Bildschirmfoto 2024-06-10 um 19 25 02" src="https://github.com/thi-voltage-visionaries/team-bms/assets/128964620/295b230a-d347-4d53-b4c4-0345a0f5c1ef">

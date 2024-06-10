@@ -9,7 +9,7 @@ Both python files need to be started with two different ssh-connections via the 
    ```
    cd Desktop/team-bms
    ```
-   This folder contains:
+   **This folder contains:**
    
    - folder for all generated json files
    
@@ -26,7 +26,7 @@ Both python files need to be started with two different ssh-connections via the 
    ```
    cd lcd
    ```
-   This folder contains:
+   **This folder contains:**
    
    - display drivers
    
@@ -36,7 +36,10 @@ Both python files need to be started with two different ssh-connections via the 
    ```
    python3 i2c_display.py
    ```
-# Required components
+
+# How to make your own battery reader from scratch
+
+## Required components
 
 - 2x Raspberry Pi 5 [Berrybase](https://www.berrybase.de/raspberry-pi-5-8gb-ram)
 
@@ -56,7 +59,7 @@ Both python files need to be started with two different ssh-connections via the 
 
 - Jumper Wire [Amazon](https://www.amazon.de/AZDelivery-Jumper-Arduino-Raspberry-Breadboard/dp/B074P726ZR/ref=sr_1_1_sspa?__mk_de_DE=ÅMÅŽÕÑ&crid=U696S9FIKARC&dib=eyJ2IjoiMSJ9.WJAp30y3xmTevyXePDnrp_oaTwr68QZamNQjrjcftBdB0zGBr6bgW-97MQJnxfJpR-s27F5iFIaKbe36rfV_So6OIqWfyJQpqUcMZGef_FXrbMAXtjfeeXLmnO_1GCNNS-DSEHiVIJ06ql_7hArXoDaVsjfkneaeEPnCRSOD-vxIyHLoeEUDN62E1kQAchujM0dccJ4YLzEbEY6uQx2dhviXCOrzAFnLu80h9pv7IqHKXFb3WmrOoksxSWPnyyNbNIl8XND1iW4ock2LTF2qgP9fWK3tULB5QWRBw9mQUPM.haaGgt8ou9lwMiIWONle99MYZAY8uM40JgO4ZOYBu3w&dib_tag=se&keywords=jumper+wire&qid=1717682280&s=computers&sprefix=jump%2Ccomputers%2C991&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)
 
-# How to make your own battery reader from scratch
+## Step-by-Step Guide
 
 1. Setup the lithium cells to battery management system (BMS) and power supply
    

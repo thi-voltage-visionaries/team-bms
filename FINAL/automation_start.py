@@ -16,8 +16,8 @@ second_script = '/lcd/i2c_display.py'
 first_process = start_script(first_script)
 print(f"{first_script} gestartet mit PID {first_process.pid}")
 
-# wait ten seconds
-time.sleep(10)
+# wait five seconds
+time.sleep(5)
 
 # start second script
 second_process = start_script(second_script)

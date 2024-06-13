@@ -3,35 +3,33 @@ import subprocess
 import time
 import os
 
-# Folder
+# folder for all generated json files
 output_folder = "battery_data_json"
 
 while True:
-    #Open Daly BMS UART message 
+    # open Daly-Smart-BMS UART message 
     output = subprocess.check_output(['daly-bms-cli', '-d', '/dev/ttyUSB0', '--all'])
 
-    #Transform message into JSON
+    # transform message into json
     data = json.loads(output)
 
-    #Extract necessary data
+    # extract necessary data
     necessary_data = {
-        "total_voltage": data["soc"]["total_voltage"],
+        "voltage": data["soc"]["total_voltage"],
         "current": data["soc"]["current"],
-        "soc_percent": data["soc"]["soc_percent"],
+        "soc": data["soc"]["soc_percent"],
         "temperature": data["temperature_range"]["highest_temperature"],
-        "capacity_ah": data["mosfet_status"]["capacity_ah"]
+        "capacity": data["mosfet_status"]["capacity_ah"]
     }
 
-    #Create Filename with Unix timestamp
+    # create filename with Unix timestamp
     timestamp = int(time.time())
     output_filename = f"battery_data_{timestamp}.json"
     output_file = os.path.join(output_folder, output_filename)
 
-    #Save JSON in folder
+    # save json file in folder
     with open(output_file, 'w') as f:
         json.dump(necessary_data, f, indent=2)
 
-    #Wait 20 seconds
-    time.sleep(20)
-
-
+    # wait 15 seconds
+    time.sleep(15)

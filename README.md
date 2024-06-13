@@ -36,7 +36,7 @@
 
 - And is then visualized on the I2C-display.
 
-## How to start the BMS-reader for the Daly-Smart-BMS
+## How to start the BMS-reader for Daly-Smart-BMS
    
 1. Open this folder:
    ```
@@ -53,7 +53,7 @@
    python3 bms_reader.py
    ```
 
-## How to start the I2C-display for the Raspberry Pi
+## How to start the I2C-display for Raspberry Pi
    
 1. Open this folder:
    ```
@@ -101,7 +101,7 @@
 
 **For more information check this website:** [Daly](https://www.dalybms.com/bms-wiring-tutorial-2/?_gl=1*t4qdqc*_up*MQ..*_ga*MTc5NzQzMzgxOS4xNzE4MDI3MjY5*_ga_QJJLNQB8EJ*MTcxODAyNzI2OC4xLjAuMTcxODAyNzI2OC4wLjAuMA..*_ga_RPN8G89S7P*MTcxODAyNzI2OC4xLjAuMTcxODAyNzI2OC4wLjAuMA..&gclid=CjwKCAjwyJqzBhBaEiwAWDRJVKBu5Kb6dW-XVRdvnflk8SaZ5ARGhr5n8a_GkJ4UVz-WR8ddkm-RZRoC_U0QAvD_BwE)
 
-- Connect the Daly Smart BMS with the enclosed UART-USB-A cable to Raspberry Pi.
+- Connect the Daly-Smart-BMS with the enclosed UART-USB-A cable to Raspberry Pi.
 
 - Connect the I2C-display to Raspberry Pi with the help of this Pinout:
 

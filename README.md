@@ -18,7 +18,7 @@
 
 **Explanation bms_reader.py**:
 
-- When you start the **bms_reader.py**, every twenty seconds a new json file is generated.
+- When you start the **bms_reader.py**, every fifteen seconds a new json file is generated.
 
 - Json file contains: **soc, voltage, current, temperature and capacity**.
 

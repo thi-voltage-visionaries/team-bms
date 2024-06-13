@@ -59,7 +59,7 @@ try:
             display.lcd_display_string(line2, 2)
             display.lcd_display_string(line3, 3)
             display.lcd_display_string(line4, 4)
-            # time sleep
+            # wait 1 second
             time.sleep(1)
 except KeyboardInterrupt:
     pass
